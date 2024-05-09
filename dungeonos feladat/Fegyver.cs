@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace dungeonos_feladat
 {
-    internal class Ital : JatekElem
+    internal class Fegyver : JatekElem
     {
-        public int EletValtozas {  get; set; }
+        public int sebzes {  get; set; }
 
-        public Ital (int x, int y, int eletValtozas) : base(x, y)
+        public Fegyver(int x, int y ) : base (x , y) 
         {
-            EletValtozas = eletValtozas;
+            this.sebzes = 20;
         }
 
         public override void Kirajzol(char nev)
         {
             Console.SetCursorPosition(X, Y);
-            Console.Write(EletValtozas > 0 ? '+' : '-');
+            Console.Write(nev);
         }
+
     }
 }

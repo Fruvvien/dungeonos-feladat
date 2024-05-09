@@ -16,10 +16,10 @@ namespace dungeonos_feladat
             Elet = 100; //Alapértelmezett életpontok
         }
 
-        public override void Kirajzol()
+        public override void Kirajzol(char nev)
         {
             Console.SetCursorPosition(X, Y);
-            Console.Write('P');
+            Console.Write(nev);
 
         }
 

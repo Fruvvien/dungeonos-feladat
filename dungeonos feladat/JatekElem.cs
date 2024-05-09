@@ -18,7 +18,7 @@ namespace dungeonos_feladat
             Y = y;
         }
 
-        public virtual void Kirajzol()
+        public virtual void Kirajzol(char nev)
         {
             Console.SetCursorPosition(X, Y);
             Console.WriteLine('?');
